@@ -6,7 +6,7 @@
 #       - main
 
 #   pull_request:
-#     branches:
+#     branches: 
 #       - main
 
 # jobs:
@@ -80,12 +80,12 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 26
+          node-version: 20
 
 
       - name: Install dependencies
         working-directory: 9th sep
-        run: npm ci 
+        run: npm install 
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
