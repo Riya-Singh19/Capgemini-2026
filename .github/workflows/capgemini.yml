@@ -30,6 +30,7 @@ jobs:
 
 
       - name: Install dependencies
+        working-directory: 9th sep
         run: npm ci 
 
       - name: Install Playwright browsers
