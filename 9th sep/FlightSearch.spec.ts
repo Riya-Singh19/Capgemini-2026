@@ -93,4 +93,4 @@ const openFlightsTab = async (page: any) => {
     await expect(page.locator('#fl_from_trigger')).toBeVisible({ timeout: 15000 });
     await expect(searchButton).toBeVisible({ timeout: 15000 });
   });
-);
+// });
