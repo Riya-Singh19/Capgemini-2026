@@ -16,7 +16,7 @@ const openFlightsTab = async (page: any) => {
 
 test.describe('Flight scenarios', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('/');
+    await page.goto('https://phptravels.net/');
     await acceptDemoModal(page);
     await page.waitForLoadState('domcontentloaded');
   });
