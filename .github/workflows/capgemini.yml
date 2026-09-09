@@ -88,11 +88,13 @@ jobs:
         run: npm install 
 
       - name: Install Playwright browsers
+        working-directory: 9th sep
         run: npx playwright install --with-deps
 
 
       - name: Run Playwright tests
-        run: npx playwright test "9th sep/FlightSearch.spec.ts"
+        working-directory: 9th sep
+        run: npx playwright test "FlightSearch.spec.ts"
 
 
       - name: Upload Playwright Report
