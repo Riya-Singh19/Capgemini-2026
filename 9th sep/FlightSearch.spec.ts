@@ -14,7 +14,7 @@ const openFlightsTab = async (page: any) => {
   await expect(page.locator('#fl_from_trigger')).toBeVisible({ timeout: 20000 });
 };
 
-test.describe('Flight scenarios', () => {
+// test.describe('Flight scenarios', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('https://phptravels.net/');
     await acceptDemoModal(page);
@@ -93,4 +93,4 @@ test.describe('Flight scenarios', () => {
     await expect(page.locator('#fl_from_trigger')).toBeVisible({ timeout: 15000 });
     await expect(searchButton).toBeVisible({ timeout: 15000 });
   });
-});
+);
