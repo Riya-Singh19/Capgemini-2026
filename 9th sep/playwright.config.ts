@@ -1,7 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
-  testDir: './tests',
+  testDir: './tests/9th sep',
   use: {
     baseURL: 'https://phptravels.net/',
     headless: true,
